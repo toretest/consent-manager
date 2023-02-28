@@ -1,1 +1,37 @@
+server:
+  port: 8080
+  error:
+    include-stacktrace: always
+    path: /error
+    whitelabel:
+      enabled: true
+
+logging:
+  pattern:
+    level: info
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  h2:
+    console:
+      enabled: true
+      # instead of http://localhost:8080/h2-console -> 8080/h2
+      # path: /h2
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect=org:
+          hibernate:
+            dialect:
+              H2Dialect: org.hibernate.dialect.H2Dialect
 

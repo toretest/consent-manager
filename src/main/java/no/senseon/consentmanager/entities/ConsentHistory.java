@@ -1,4 +1,4 @@
-package entities;
+package no.senseon.consentmanager.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;

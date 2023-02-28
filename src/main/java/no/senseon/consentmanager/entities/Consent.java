@@ -1,9 +1,7 @@
-package entities;
+package no.senseon.consentmanager.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
-
 
 @Getter
 @Setter

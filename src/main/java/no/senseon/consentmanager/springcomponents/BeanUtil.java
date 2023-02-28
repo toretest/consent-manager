@@ -1,4 +1,4 @@
-package no.senseon.consentmanager.entities;
+package no.senseon.consentmanager.springcomponents;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;

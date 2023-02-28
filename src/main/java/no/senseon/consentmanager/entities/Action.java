@@ -1,4 +1,4 @@
-package entities;
+package no.senseon.consentmanager.entities;
 
 public enum Action {
     INSERTED("INSERTED"),

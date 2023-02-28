@@ -1,4 +1,4 @@
-package no.ya.topaz.consentmanager.springcomponents;
+package no.senseon.consentmanager.springcomponents;
 
 import lombok.Builder;
 import lombok.Getter;

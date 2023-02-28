@@ -1,14 +1,14 @@
-package entities;
+package no.senseon.consentmanager.entities;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PrePersist;
-import javax.persistence.PreRemove;
-import javax.persistence.PreUpdate;
-import javax.transaction.Transactional;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreRemove;
+import jakarta.persistence.PreUpdate;
+import jakarta.transaction.Transactional;
 
-import static entities.Action.*;
-
-import static no.ya.topaz.consentmanager.springcomponents.BeanUtil.getBean;
+import static jakarta.transaction.Transactional.TxType.MANDATORY;
+import static no.senseon.consentmanager.entities.Action.*;
+import static no.senseon.consentmanager.springcomponents.BeanUtil.getBean;
 
 public class ConsentEntityListener {
     @PrePersist

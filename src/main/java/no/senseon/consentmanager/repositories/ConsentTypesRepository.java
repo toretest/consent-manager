@@ -1,13 +1,12 @@
-package no.ya.topaz.consentmanager.repositories;
+package no.senseon.consentmanager.repositories;
 
-import no.ya.topaz.consentmanager.entity.ConsentTypes;
+import no.senseon.consentmanager.entities.ConsentTypes;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
 
 @RepositoryRestResource(exported = false)
-@SuppressWarnings("squid:S00100")
 public interface ConsentTypesRepository extends JpaRepository<ConsentTypes, Long> {
     ConsentTypes findConsentTypesByName(String name);
     ConsentTypes findConsentTypesByNameAndConsentChannel_Name(String consentTypesName, String channelName);

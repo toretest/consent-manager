@@ -1,15 +1,14 @@
-package no.ya.topaz.consentmanager.repositories;
+package no.senseon.consentmanager.repositories;
 
-import no.ya.topaz.consentmanager.entity.ConsentChannel;
-import no.ya.topaz.consentmanager.entity.ConsentCustomer;
-import no.ya.topaz.consentmanager.entity.ConsentHistory;
+import no.senseon.consentmanager.entities.ConsentChannel;
+import no.senseon.consentmanager.entities.ConsentCustomer;
+import no.senseon.consentmanager.entities.ConsentHistory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
 
 @RepositoryRestResource(exported = false)
-@SuppressWarnings("squid:S00100")
 public interface ConsentHistoryRepository extends JpaRepository<ConsentHistory, Long> {
     List<ConsentHistory> findConsentHistoriesByConsent_ConsentTypes_ConsentChannelAndConsent_ConsentCustomer(ConsentChannel consentChannel, ConsentCustomer consentCustomer);
 }

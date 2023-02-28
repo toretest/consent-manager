@@ -1,7 +1,7 @@
-package no.ya.topaz.consentmanager.repositories;
+package no.senseon.consentmanager.repositories;
 
-import no.ya.topaz.consentmanager.entity.ConsentTypes;
-import no.ya.topaz.consentmanager.entity.ConsentTypesHistory;
+import no.senseon.consentmanager.entities.ConsentTypes;
+import no.senseon.consentmanager.entities.ConsentTypesHistory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

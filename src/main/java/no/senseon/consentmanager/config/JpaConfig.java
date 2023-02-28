@@ -1,4 +1,4 @@
-package no.ya.topaz.consentmanager.config;
+package no.senseon.consentmanager.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
-@EnableJpaRepositories("no.ya.topaz.consentmanager.repositories")
+@EnableJpaRepositories("no.senseon.consentmanager.repositories")
 public class JpaConfig {
     @Bean
     public AuditorAware<String> auditorAware() {

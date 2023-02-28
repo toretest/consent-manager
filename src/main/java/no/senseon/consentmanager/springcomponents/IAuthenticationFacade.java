@@ -1,4 +1,4 @@
-package no.ya.topaz.consentmanager.springcomponents;
+package no.senseon.consentmanager.springcomponents;
 
 public interface IAuthenticationFacade {
     SecurityUserInfo getUserInfo();
